@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* DISEÑO NAVBAR */
+.textMarket{
+  margin-left: 30px !important;
+}
+
+.itemsMarket{
+  margin-left: 690px !important;
+}
+
+.itemsMarket li a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buscarMarket{
+  margin-left: 600px;
+}
