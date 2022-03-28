@@ -19,7 +19,7 @@ code {
 }
 
 .itemsMarket{
-  margin-left: 690px !important;
+  margin-left: 500px !important;
 }
 
 .itemsMarket li a {
@@ -30,3 +30,8 @@ code {
 .buscarMarket{
   margin-left: 600px;
 }
+
+.finNavbar{
+  margin-left: 450px !important;
+}
+

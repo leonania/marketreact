@@ -1,10 +1,10 @@
 import React from 'react';
-
+import ItemListContainer from './ItemListContainer';
 
 const barraNav = () => {
     return (
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,16 +15,25 @@ const barraNav = () => {
         <a class="nav-link" href="#">INICIO <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href="#">NUESTROS PRODUCTOS <span class="sr-only"></span></a>
+      <a class="nav-link" href="#">PRODUCTOS <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
       <a class="nav-link" href="#">CONTACTANOS <span class="sr-only"></span></a>
       </li>
+
+      <li class="nav-item finNavbar ">
+      <a class="nav-link" href="#">REGISTRATE <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">LOGIN <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item probandoCarrito">
+      <ItemListContainer/>
+      </li>
+
     </ul>
-    <form class="form-inline my-2 my-lg-0 buscarMarket">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-     
-    </form>
+    
+    
   </div>
 </nav>
     );
