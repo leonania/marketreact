@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemListContainer from './ItemListContainer';
+import CartWidget from './CartWidget';
 
 const barraNav = () => {
     return (
@@ -28,7 +28,7 @@ const barraNav = () => {
       <a class="nav-link" href="#">LOGIN <span class="sr-only"></span></a>
       </li>
       <li class="nav-item probandoCarrito">
-      <ItemListContainer/>
+      <CartWidget/>
       </li>
 
     </ul>

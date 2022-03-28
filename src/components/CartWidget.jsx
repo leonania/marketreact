@@ -2,7 +2,7 @@ import React from 'react';
 import {Badge} from "@material-ui/core";
 import { ShoppingCartOutlined} from "@material-ui/icons";
 
-const ItemList = () =>{
+const CartWidget = () =>{
     return(
 <Badge badgeContent={2} color="secondary">
         
@@ -14,4 +14,4 @@ const ItemList = () =>{
 }
 
 
-export default ItemList;
+export default CartWidget;
