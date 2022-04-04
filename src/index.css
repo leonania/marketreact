@@ -40,3 +40,21 @@ code {
   text-align: center;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+
+
+
+/* BUTTON CARD */
+
+
+.cardEntera{
+  margin-left: 50px !important;
+  text-align: center !important;
+}
+
+.buttonCard{
+  margin-left: 20px !important;
+}
+
+.addCart{
+  margin-left: 20px;
+  margin-top: 15px !important;}
