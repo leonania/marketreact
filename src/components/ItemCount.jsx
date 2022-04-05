@@ -5,7 +5,7 @@ import producto1 from '../imagenes/producto1.jpeg';
 
 
 
-const ItemCount = ({stock = 0 ,initial = 1, onAdd}) => {
+const ItemCount = ({stock = 10 ,initial = 1, onAdd}) => {
     const [count, setCount] = useState(0);
 
   useEffect(()=>{
@@ -37,9 +37,9 @@ const ItemCount = ({stock = 0 ,initial = 1, onAdd}) => {
     </Card.Text>
 
 
-    <Button variant="outline-info" className="buttonCard" onClick={increment}> - </Button> 
+    <Button variant="outline-info" className="buttonCard" onClick={decrement}> - </Button> 
      <span style={{ fontSize: "1.5rem", color: "black"}} className="buttonCard">{count}</span> 
-     <Button variant="outline-info" className="buttonCard"onClick={decrement}>+</Button> <br></br>
+     <Button variant="outline-info" className="buttonCard"onClick={increment}> + </Button> <br></br>
 
 
                {

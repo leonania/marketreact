@@ -12,13 +12,13 @@ function App() {
           <NavBar/>
    
       
-          <ItemListContainer text="! BIENVENIDOS A CUIDA TU TIERRA !"/>
+          <ItemListContainer/>
           
           
 
         
           
-         <ItemCount/>
+         
       </div>
   );
 }

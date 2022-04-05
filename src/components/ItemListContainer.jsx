@@ -1,9 +1,9 @@
+import ItemCount from "./ItemCount";
 
-
-const ItemListContainer = ({text}) =>{
+const ItemListContainer = () =>{
 
     return(
-              <h1 className="textPrincipal"> { text }</h1> 
+             <ItemCount/>
 
     );
 
