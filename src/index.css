@@ -40,6 +40,17 @@ code {
   text-align: center;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+/* NAVBAR ICONO CARRITO */
+
+.MuiSvgIcon-root{
+  color: white !important;
+  margin-top: 10px !important;
+}
+
+.MuiBadge-badge{
+margin-top: 4px !important;
+background-color: rgb(49, 39, 39) !important;
+} 
 
 
 
@@ -59,3 +70,4 @@ code {
 .addCart{
   margin-left: 20px;
   margin-top: 15px !important;}
+
