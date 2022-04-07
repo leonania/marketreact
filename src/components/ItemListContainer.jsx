@@ -25,7 +25,7 @@ const ItemListContainer = ({ greeting }) =>{
         <ItemList items={datos}/>
 
         
-        <ItemCount/>
+        <ItemCount stock={5} initial={1} onAdd={onAdd}/>
         
         </>
              
