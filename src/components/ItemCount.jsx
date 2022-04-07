@@ -5,7 +5,7 @@ import producto1 from '../imagenes/producto1.jpeg';
 
 
 
-const ItemCount = ({stock = 10 ,initial = 1, onAdd}) => {
+const ItemCount = ({stock,initial, onAdd}) => {
     const [count, setCount] = useState(0);
 
   useEffect(()=>{
