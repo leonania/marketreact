@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
 import customFetch from "../utilidades/customFetch";
 import ItemList from "./ItemList";
+import products from "../utilidades/products"
 
 
-const { products } = require('../utilidades/products');
 
 const ItemListContainer = ({ greeting }) =>{
        const [datos, setDatos] = useState ([]);
@@ -22,7 +22,7 @@ const ItemListContainer = ({ greeting }) =>{
 
     return(
         <>
-        { greeting }
+        <h1>{ greeting }</h1>
 
         <ItemList items={datos}/>
 
