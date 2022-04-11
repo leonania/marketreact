@@ -71,3 +71,55 @@ background-color: rgb(49, 39, 39) !important;
   margin-left: 20px;
   margin-top: 15px !important;}
 
+
+
+
+
+
+
+/* PROBANDO ITEMDETAIL */
+.cardPrincipal{
+  border: none !important;
+  margin-left: 250px !important;
+  margin-top: 150px !important;
+}
+.imagendeCard{
+  height: 400px;
+  width: 400px;
+}
+.todomenosImagen{
+  transform: translate(600px, -410px);
+}
+  
+.titleCard{
+  font-size: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: normal !important;
+  margin-bottom: 30px;
+}
+
+.textCard{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.precioo{
+  font-size: 20px;
+  margin-top: 50px !important;
+  text-align: center !important;
+  height: 35px !important;
+  width: 80px !important;
+  border: 1px solid red !important;
+  font-weight: bold;
+}
+
+.itemcountt{
+  margin-top: 20px !important;
+  text-align: center !important;
+}
+
+.stock{
+  margin-top: 50px !important;
+}

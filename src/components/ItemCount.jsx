@@ -29,7 +29,7 @@ const ItemCount = ({stock,initial, onAdd}) => {
     return (
      
 <>
-
+<div className='itemcountt'>
     <Button variant="outline-info" className="buttonCard" onClick={decrement}> - </Button> 
      <span style={{ fontSize: "1.5rem", color: "black"}} className="buttonCard">{count}</span> 
      <Button variant="outline-info" className="buttonCard"onClick={increment}> + </Button> <br></br>
@@ -40,7 +40,7 @@ const ItemCount = ({stock,initial, onAdd}) => {
                 ? <Button variant="contained" color="primary" onClick={() => onAdd(count)}>Add to Cart</Button>
                 : <Button variant="contained" disabled>Add to Cart</Button>
                 }
-
+</div>
 </>
  
         
