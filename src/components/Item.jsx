@@ -1,7 +1,7 @@
 import { Card, Container, Row, Col } from 'react-bootstrap';
 
-
-const Item = ({imagen, titulo, descripcion, precio, stock  }) =>{ 
+import {Link} from "react-router-dom";
+const Item = ({imagen, titulo, descripcion, precio, stock, id  }) =>{ 
 
     return (
 
@@ -16,6 +16,8 @@ const Item = ({imagen, titulo, descripcion, precio, stock  }) =>{
                             <Card.Text>{descripcion}</Card.Text>
                             <Card.Text>$ {precio} </Card.Text>
                             <Card.Text>{stock} Unidades. </Card.Text>
+                            <Card.Text> <Link to={`/item/${id}`}> Detalle </Link></Card.Text> 
+
                             </Card.Body>
                             </Card>
                             </div>

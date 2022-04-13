@@ -4,8 +4,7 @@ import producto3 from "../imagenes/producto3.jpeg"
 import producto4 from "../imagenes/producto4.jpeg"
 import producto5 from "../imagenes/producto5.jpeg"
 import producto6 from "../imagenes/producto6.jpeg"
-
-
+ 
 
 const products = [
 
@@ -17,6 +16,8 @@ const products = [
             precio: 450,
             description: " Amigables con el medio ambiente, resistente, y gruesos. ",
             image: producto1,
+            categoryId: 3,
+           
      },
 
      { 
@@ -26,6 +27,7 @@ const products = [
         precio: 650,
         description: " Ideales para remover el make up de la piel o limpiar las impurezas! Tienen dos texturas... ",
         image: producto2,
+        categoryId: 1,
      },
 
 
@@ -36,6 +38,7 @@ const products = [
     precio: 400,
     description: " Una nueva presentación de 120ml, para que no te quedes sin tu cuidado natural de siempre... ",
     image: producto3,
+    categoryId: 1,
     },
 
 { 
@@ -45,6 +48,7 @@ const products = [
     precio: 450,
     description: " Fortalece la piel del rostro, cuello, ojos y labios. Desmaquilla y elimina impurezas... ",
     image: producto4,
+    categoryId: 2,
 },
 
 { 
@@ -54,6 +58,7 @@ const products = [
     precio: 300,
     description: " Sabor eucalipto. Sin químicos, sulfatos, parabenos y aceite de palma... ",
     image: producto5,
+    categoryId: 2,
 },
 
 { 
@@ -63,6 +68,7 @@ const products = [
     precio: 350,
     description: " Aroma mix floral, presentacion en crema. Súper efectivo y dura un montón!! ",
     image: producto6,
+    categoryId: 2,
 },
 
 ]

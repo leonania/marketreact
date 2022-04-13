@@ -25,6 +25,7 @@ code {
 .itemsMarket li a {
   font-size: 20px;
   font-weight: bold;
+ line-height:normal !important;
 }
 
 .buscarMarket{
@@ -122,4 +123,10 @@ background-color: rgb(49, 39, 39) !important;
 
 .stock{
   margin-top: 50px !important;
+}
+
+
+.card-title h5{
+
+  text-transform: uppercase !important; 
 }

@@ -6,13 +6,13 @@ import Item from "./Item";
 const ItemDetail = ({ item }) => {
 
     const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
+        alert("Añadiste al carrito " + qty + " productos.");
     }
 
     return (
         <>
         {
-            item.image
+           item && item.image
             ? 
           
             <Card className="cardPrincipal" style={{ width: '48rem' }}>

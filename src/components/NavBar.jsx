@@ -1,5 +1,6 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import {Link} from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -9,23 +10,23 @@ const NavBar = () => {
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a className="navbar-brand textMarket" href="#">CUIDA TU TIERRA</a>
+    <Link to='/'> <p className="navbar-brand textMarket" >CUIDA TU TIERRA</p></Link> 
     <ul className="navbar-nav mr-auto mt-2 mt-lg-0 itemsMarket">
       <li className="nav-item active">
-        <a className="nav-link" href="#">INICIO <span className="sr-only"></span></a>
+      <Link to="/category/1"> <p className="nav-link" >CUIDADO PERSONAL<span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="#">PRODUCTOS <span className="sr-only"></span></a>
+      <Link to="/category/2"> <p className="nav-link" >USO DIARIO <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="#">CONTACTANOS <span className="sr-only"></span></a>
+      <Link to="/category/3"><p className="nav-link" >OTROS <span className="sr-only"></span></p></Link> 
       </li>
 
       <li className="nav-item finNavbar ">
-      <a className="nav-link" href="#">REGISTRATE <span className="sr-only"></span></a>
+      <Link to="/category/4"> <p className="nav-link" >REGISTRATE <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <a className="nav-link" href="#">LOGIN <span className="sr-only"></span></a>
+      <Link to="/category/5"> <p className="nav-link" >LOGIN <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item probandoCarrito">
       <CartWidget/>
