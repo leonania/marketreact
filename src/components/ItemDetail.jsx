@@ -1,12 +1,17 @@
 import ItemCount from "./ItemCount";
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Card, Button } from 'react-bootstrap';
+import { useState } from 'react';
 import Item from "./Item";
+import GoToCart from "./GoToCart";
 
 const ItemDetail = ({ item }) => {
+    const [itemCount, setItemCount] = useState(0);
 
     const onAdd = (qty) => {
         alert("Añadiste al carrito " + qty + " productos.");
+        setItemCount(qty);
     }
 
     return (
@@ -22,7 +27,13 @@ const ItemDetail = ({ item }) => {
             <Card.Text className="textCard">{item.description}</Card.Text>
             <Card.Text className="precioo">$ {item.precio} </Card.Text>
             <Card.Text className="stock">{item.stock} Unidades. </Card.Text>
-            <ItemCount className="itemcountt" stock={item.stock} initial={1} onAdd={onAdd} />
+
+            {
+                itemCount === 0
+            ? <ItemCount className="itemcountt" stock={item.stock} initial={1} onAdd={onAdd} />
+            
+            : <GoToCart/>
+            }
             </Card.Body>
             
             </Card>
