@@ -2,16 +2,21 @@ import ItemCount from "./ItemCount";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Item from "./Item";
 import GoToCart from "./GoToCart";
+import { CartContext } from './CartContext';
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
 
+    const test = useContext(CartContext);
+
     const onAdd = (qty) => {
         alert("Añadiste al carrito " + qty + " productos.");
         setItemCount(qty);
+        test.addToCart(item, qty);
+
     }
 
     return (

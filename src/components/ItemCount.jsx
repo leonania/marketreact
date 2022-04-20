@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { Card, Button } from 'react-bootstrap';
-import producto1 from '../imagenes/producto1.jpeg';
 
 
 
 
-const ItemCount = ({stock,initial, onAdd}) => {
+
+const ItemCount = ({stock, initial, onAdd}) => {
     const [count, setCount] = useState(0);
 
   useEffect(()=>{

@@ -6,9 +6,15 @@ import ItemCount from './components/ItemCount'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from "./components/Cart";
+import CartContextProvider from "../src/components/CartContext";
+
+
+
+
 
 function App() {
   return (
+    <CartContextProvider>
        <BrowserRouter>
 
         <NavBar/>
@@ -40,7 +46,7 @@ function App() {
           </Routes>
           </BrowserRouter>
          
-     
+          </CartContextProvider>
   );
 }
 
