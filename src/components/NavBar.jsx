@@ -29,7 +29,7 @@ const NavBar = () => {
       <Link to="/category/5"> <p className="nav-link" >LOGIN <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item probandoCarrito">
-      <CartWidget/>
+     <Link to="/Cart"><CartWidget/></Link> 
       </li>
 
     </ul>

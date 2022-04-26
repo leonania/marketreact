@@ -181,6 +181,8 @@ const ContentCart = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  border: 1px solid black;
+  margin-top: 20px;
 `;
 
 const ProductDetail = styled.div`
@@ -211,6 +213,8 @@ const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
 `;
+
+
 
 export { 
     Wrapper, Logo, MenuItem, Left, Center, Right, 
