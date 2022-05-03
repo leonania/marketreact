@@ -3,8 +3,9 @@ import { CartContext } from './CartContext';
 import { WrapperCart, TitleCart, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductAmountContainer, ProductAmount, ProductPrice, Hr } from './styledComponents';
 import { Link } from 'react-router-dom';
 import FormatNumber from "../utilidades/FormatNumber";
-
+import db from "../utilidades/firebaseConfig";
 import styled from "styled-components";
+import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
 
 const Top = styled.div`
   display: flex;
@@ -76,6 +77,50 @@ const Button = styled.button`
 const Cart = () => {
     const test = useContext(CartContext);
 
+
+
+const createOrder = () =>{
+const itemsFordDB =test.cartList.map(item =>({
+  id: item.idItem,
+  title: item.nameItem,
+  price: item.costItem,
+  qty: item.qtyItem
+ 
+}))
+
+test.cartList.forEach(async (item)=>{
+  const itemRef= doc(db,"products",item.idItem);
+  await updateDoc(itemRef,{
+    stock: increment(-item.qtyItem)
+  });
+});
+
+  let order ={
+    buyer:{
+    name: "Leo Nania",
+    email: "Leo.nania18@gmail.com",
+    phone: "1140842058"
+
+  },
+  total: test.calcTotal(),
+  date: serverTimestamp(),
+  items: itemsFordDB,
+  }
+  console.log (order);
+
+  const createOrderInFirestore = async () => {
+    // Add a new document with a generated id
+    const newOrderRef = doc(collection(db, "orders"));
+    await setDoc(newOrderRef, order);
+    return newOrderRef;
+  }
+
+  createOrderInFirestore()
+    .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+    .catch(err => console.log(err));
+
+  test.removeList();
+}
     return (
         <WrapperCart>
         <TitleCart>CARRITO</TitleCart>
@@ -134,7 +179,7 @@ const Cart = () => {
                             <SummaryItemText>Total</SummaryItemText>
                             <SummaryItemPrice><FormatNumber number={test.calcTotal()} /></SummaryItemPrice>
                         </SummaryItem>
-                        <Button>FINALIZAR COMPRA</Button>
+                        <Button onClick={createOrder}>FINALIZAR COMPRA</Button>
                     </Summary>
                 }
         </ContentCart>
