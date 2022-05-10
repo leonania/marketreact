@@ -10,26 +10,26 @@ const NavBar = () => {
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <Link to='/'> <p className="navbar-brand textMarket" >CUIDA TU TIERRA</p></Link> 
+    <Link to='/' style={{textDecoration: "none", color: "white"}}> <p className="navbar-brand textMarket" >CUIDA TU TIERRA</p></Link> 
     <ul className="navbar-nav mr-auto mt-2 mt-lg-0 itemsMarket">
       <li className="nav-item active">
-      <Link to="/category/1"> <p className="nav-link" >CUIDADO PERSONAL<span className="sr-only"></span></p></Link> 
+      <Link to="/category/1" style={{textDecoration: "none", color: "white"}}> <p className="nav-link" >CUIDADO PERSONAL<span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <Link to="/category/2"> <p className="nav-link" >USO DIARIO <span className="sr-only"></span></p></Link> 
+      <Link to="/category/2" style={{textDecoration: "none", color: "white"}}> <p className="nav-link" >USO DIARIO <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <Link to="/category/3"><p className="nav-link" >OTROS <span className="sr-only"></span></p></Link> 
+      <Link to="/category/3" style={{textDecoration: "none", color: "white"}}><p className="nav-link" >OTROS <span className="sr-only"></span></p></Link> 
       </li>
 
       <li className="nav-item finNavbar ">
-      <Link to="/category/4"> <p className="nav-link" >REGISTRATE <span className="sr-only"></span></p></Link> 
+      <Link to="/category/4" style={{textDecoration: "none", color: "white"}}> <p className="nav-link" >REGISTRATE <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item">
-      <Link to="/category/5"> <p className="nav-link" >LOGIN <span className="sr-only"></span></p></Link> 
+      <Link to="/category/5" style={{textDecoration: "none", color: "white"}}> <p className="nav-link" >LOGIN <span className="sr-only"></span></p></Link> 
       </li>
       <li className="nav-item probandoCarrito">
-     <Link to="/Cart"><CartWidget/></Link> 
+     <Link to="/Cart" style={{textDecoration: "none", color: "white"}}><CartWidget/></Link> 
       </li>
 
     </ul>

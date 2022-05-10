@@ -14,7 +14,7 @@ const ItemListContainer = () =>{
        const [datos, setDatos] = useState ([]);
 
        const {categoryId} = useParams();
-
+//componentDidUpdate
        useEffect(() => { 
         firestoreFetch(categoryId)
         .then(result => setDatos (result))
